@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Juan J. Rodríguez S.</h1>
+                <img class="img-fluid max-width: 100% height: auto"
+                    src="https://static.wikia.nocookie.net/deadliestfiction/images/c/c7/Y_ji_Kazami.png/revision/latest?cb=20180826104615"
+                    alt="Avatar">`
+                <h2>Datos Personales</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="students">
+                    </tbody>
+                </table>
+            </div>
+            <div class="col">
+                <h2>Cursos Actuales</h2>
+                <form style="margin:10px;">
+                    <div class="form-row">
+                      <div class="col">
+                          <input type="text" class="form-control" id="search-box" placeholder="Filtrar por nombre">
+                      </div>
+                      <div class="col">
+                          <button type="button" id="button-filterByName" class="btn btn-success">Aplicar</button>
+                      </div>
+                    </div>
+                </form>
+                <form style="margin:10px;">
+                    <div class="form-row">
+                      <div class="col">
+                          <input type="text" class="form-control" id="min-Cred" placeholder="Minimo de creditos">
+                          <input type="text" class="form-control" id="max-Cred" placeholder="Maximo de creditos">
+                      </div>
+                      <div class="col">
+                          <button type="button" id="button-filterByCredits" class="btn btn-success">Aplicar</button>
+                      </div>
+                    </div>
+                </form>
+                <table class="table table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Curso</th>
+                            <th>Profesor</th>
+                            <th>Creditos</th>
+                        </tr>
+                    </thead>
+                    <tbody id="courses">
+                    </tbody>
+                </table>
+                <div class="row">
+                    <div class="col">
+                      <h4>Total créditos:</h4>
+                    </div>
+                    <div id="creds" class="col">
+                      <h4 id="total-credits"></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./scripts/course.js" ></script>
+    <script type="module" src="./scripts/dataCourses.js" ></script>
+    <script type="module" src="./scripts/student.js" ></script>
+    <script type="module" src="./scripts/dataStudent.js" ></script>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+
+</html>
